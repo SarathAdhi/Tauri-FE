@@ -1,6 +1,6 @@
 import React from "react";
-import { Button, Divider } from "@chakra-ui/react";
-import { ChartBarIcon, UserCircleIcon } from "@heroicons/react/24/outline";
+import { Divider } from "@chakra-ui/react";
+import { UserCircleIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import { Component } from "../../types/component";
 import { Link } from "../elements/Link";
@@ -16,7 +16,7 @@ export const PageLayout: React.FC<Props & Component> = ({
   children,
 }) => {
   return (
-    <div className="flex min-h-screen">
+    <div className="body flex min-h-screen">
       <aside className="z-50 flex flex-col gap-4 flex-shrink-0 justify-between border-r-2">
         <div className="grid gap-4 py-4 ">
           <img className="w-10 h-10 mx-auto" src="/tauri.svg" />
